@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.control {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.label {
+  color: #4c5870;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.select {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 30px 9px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+
+  &:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgb(79 70 229 / 10%);
+  }
+
+  &:disabled {
+    background-color: #f3f5f9;
+    cursor: not-allowed;
+    color: #929bad;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

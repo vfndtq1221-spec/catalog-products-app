@@ -1,0 +1,54 @@
+@use './_reset.scss' as *;
+
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f6fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --color-ink: #172033;
+  --color-muted: #68748a;
+  --color-primary: #4f46e5;
+  --color-primary-dark: #3730a3;
+  --color-border: #e2e7f0;
+  --color-surface: #fff;
+  --color-background: #f4f6fb;
+  --color-danger: #b42332;
+  --shadow-card: 0 8px 26px rgb(22 34 61 / 7%);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgb(79 70 229 / 35%);
+  outline-offset: 2px;
+}

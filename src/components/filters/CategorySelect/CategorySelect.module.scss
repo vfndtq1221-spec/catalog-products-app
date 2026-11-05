@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.label {
+  color: #4c5870;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.select {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 36px 9px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    border-color: var(--color-border);
+    background-color: #fff;
+    color: var(--color-ink);
+  }
+}
+
+.loading,
+.error {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.error {
+  color: var(--color-danger);
+}
