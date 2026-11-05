@@ -20,7 +20,7 @@
 ### Клонирование репозитория с GitHub
 Необходимо скопировать URL репозитория и в терминале выполнить команду:
 ```sh
-git clone <ссылка-на-ваш-репозиторий>
+git clone https://github.com/vfndtq1221-spec/catalog-product-app
 cd catalog-products-app
 ```
 ### Установите зависимости
